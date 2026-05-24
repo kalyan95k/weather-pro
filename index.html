@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Telugu Tech Squad — AI Weather Pro</title>
+
+<meta name="description" content="AI Premium Weather Dashboard by Telugu Tech Squad">
+
+<link rel="manifest" href="manifest.json">
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="app" class="day-bg">
+
+<div id="effects"></div>
+
+<header class="hero-section">
+
+<nav class="navbar glass">
+
+<div class="logo">
+⚡ Telugu Tech Squad
+</div>
+
+<div class="nav-links">
+<a href="#forecast">Forecast</a>
+<a href="#radar">Radar</a>
+<a href="#alerts">Alerts</a>
+<a href="#aqi">AQI</a>
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>
+🌦️ AI Weather Pro
+</h1>
+
+<p>
+Advanced Live Weather Platform for India
+</p>
+
+<div class="search-box glass">
+
+<input type="text" id="searchInput" placeholder="Search city...">
+
+<button id="searchBtn">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="main-dashboard container">
+
+<div class="weather-card glass">
+
+<div class="weather-left">
+
+<p id="condition">Sunny</p>
+
+<h2 id="city">Hyderabad</h2>
+
+<h1 id="temp">32°</h1>
+
+<p id="feelsLike">Feels Like 35°C</p>
+
+</div>
+
+<div class="weather-right">
+<div id="weatherIcon">☀️</div>
+</div>
+
+</div>
+
+<div class="details-grid">
+
+<div class="glass detail-card">
+🌬️ Wind
+<h3 id="wind">12 km/h</h3>
+</div>
+
+<div class="glass detail-card">
+💧 Humidity
+<h3 id="humidity">65%</h3>
+</div>
+
+<div class="glass detail-card">
+👁️ Visibility
+<h3 id="visibility">10 km</h3>
+</div>
+
+<div class="glass detail-card">
+🌡️ Pressure
+<h3 id="pressure">1012 mb</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="forecast" class="forecast-section container">
+
+<h2>
+📅 7 Day Forecast
+</h2>
+
+<div id="forecastCards" class="forecast-grid"></div>
+
+</section>
+
+<section id="aqi" class="container">
+
+<div class="glass aqi-card">
+
+<h2>🌫️ Air Quality Index</h2>
+
+<h1 id="aqiValue">45</h1>
+
+<p id="aqiStatus">Good Air Quality</p>
+
+</div>
+
+</section>
+
+<section id="alerts" class="container">
+
+<div class="alert-box glass">
+⚠️ Live Emergency Weather Alerts Enabled
+</div>
+
+</section>
+
+<section id="radar" class="container">
+
+<h2>
+🛰️ Live Weather Radar
+</h2>
+
+<div class="radar-box glass">
+
+<iframe
+src="https://embed.windy.com/embed2.html"
+frameborder="0">
+</iframe>
+
+</div>
+
+</section>
+
+<footer class="glass footer">
+
+<div>
+<h2>Telugu Tech Squad</h2>
+<p>Premium AI Weather Experience</p>
+</div>
+
+<div class="social-icons">
+
+<a href="https://telugutechsquad.com">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+<a href="https://youtube.com">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://instagram.com">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://facebook.com">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
