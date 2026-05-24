@@ -1,0 +1,9 @@
+{
+  "name": "AI Weather Pro",
+  "short_name": "WeatherPro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0ea5e9",
+  "icons": []
+}
